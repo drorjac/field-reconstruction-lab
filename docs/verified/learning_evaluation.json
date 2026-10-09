@@ -1,0 +1,553 @@
+{
+  "note": "All seven estimators see identical points. Fixed layout; independent test fields; fixed hyperparameters. DDPM 95% coverage statistic is descriptive, not a calibrated credible interval.",
+  "training_seconds": {
+    "CNN": 4.703399375022855,
+    "DDPM": 7.993470083019929
+  },
+  "training_steps": 200,
+  "records": [
+    {
+      "seed": 0,
+      "model": "IDW",
+      "rmse": 0.1527876682901196,
+      "mae": 0.11520510065285447,
+      "measurement_rmse": 0.05251891115118683,
+      "inference_seconds": 0.0007396249857265502,
+      "heldout_sensor_rmse": 0.1630930752016154,
+      "info": {}
+    },
+    {
+      "seed": 0,
+      "model": "Tikhonov",
+      "rmse": 0.1381735589419858,
+      "mae": 0.09065126280486874,
+      "measurement_rmse": 0.03574587991254104,
+      "inference_seconds": 0.01624924998031929,
+      "heldout_sensor_rmse": 0.16521177175509416,
+      "info": {}
+    },
+    {
+      "seed": 0,
+      "model": "GP",
+      "rmse": 0.06967504932825058,
+      "mae": 0.04953369611897592,
+      "measurement_rmse": 0.012970299337051358,
+      "inference_seconds": 0.04585625001345761,
+      "heldout_sensor_rmse": 0.07325825838978132,
+      "info": {
+        "uncertainty": "conditional latent-field standard deviation; fixed kernel"
+      },
+      "pointwise_95_coverage": 1.0
+    },
+    {
+      "seed": 0,
+      "model": "TV",
+      "rmse": 0.15663665856190653,
+      "mae": 0.10254879859241564,
+      "measurement_rmse": 0.020336119041538255,
+      "inference_seconds": 1.5994866669934709,
+      "heldout_sensor_rmse": 0.17455086421754681,
+      "info": {
+        "converged": true,
+        "iterations": 276,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    },
+    {
+      "seed": 0,
+      "model": "Heat",
+      "rmse": 0.28910559464049285,
+      "mae": 0.1888972492177569,
+      "measurement_rmse": 0.0006797336304959986,
+      "inference_seconds": 0.4509753749880474,
+      "heldout_sensor_rmse": 0.32508429354925744,
+      "info": {
+        "step_size": 0.0010407263548835117
+      }
+    },
+    {
+      "seed": 0,
+      "model": "CNN",
+      "rmse": 0.10173978735043289,
+      "mae": 0.06679595744152231,
+      "measurement_rmse": 0.047327304759414865,
+      "inference_seconds": 0.0014449169975705445,
+      "heldout_sensor_rmse": 0.10938802614765453,
+      "info": {}
+    },
+    {
+      "seed": 0,
+      "model": "DDPM",
+      "rmse": 0.1069900074558622,
+      "mae": 0.07309294906613303,
+      "measurement_rmse": 0.045840371522546663,
+      "inference_seconds": 0.2044595829793252,
+      "heldout_sensor_rmse": 0.12485641333717655,
+      "info": {
+        "uncertainty": "ensemble spread; not calibrated posterior",
+        "samples": 8
+      },
+      "pointwise_95_coverage": 0.9140625
+    },
+    {
+      "seed": 1,
+      "model": "IDW",
+      "rmse": 0.13312053679558347,
+      "mae": 0.0954042596624915,
+      "measurement_rmse": 0.039608064886286515,
+      "inference_seconds": 0.0007469580159522593,
+      "heldout_sensor_rmse": 0.13505421166708947,
+      "info": {}
+    },
+    {
+      "seed": 1,
+      "model": "Tikhonov",
+      "rmse": 0.132814368191281,
+      "mae": 0.09153497773957187,
+      "measurement_rmse": 0.04002808357647637,
+      "inference_seconds": 0.018855040980270132,
+      "heldout_sensor_rmse": 0.13376404204006487,
+      "info": {}
+    },
+    {
+      "seed": 1,
+      "model": "GP",
+      "rmse": 0.16676366440167198,
+      "mae": 0.11222494968652712,
+      "measurement_rmse": 0.014804732799415934,
+      "inference_seconds": 0.14999420900130644,
+      "heldout_sensor_rmse": 0.1548313439549357,
+      "info": {
+        "uncertainty": "conditional latent-field standard deviation; fixed kernel"
+      },
+      "pointwise_95_coverage": 0.8203125
+    },
+    {
+      "seed": 1,
+      "model": "TV",
+      "rmse": 0.12260736607673604,
+      "mae": 0.08166209636314428,
+      "measurement_rmse": 0.021402068876555,
+      "inference_seconds": 1.8807209999940824,
+      "heldout_sensor_rmse": 0.11886529474285389,
+      "info": {
+        "converged": true,
+        "iterations": 312,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    },
+    {
+      "seed": 1,
+      "model": "Heat",
+      "rmse": 0.28907091624437287,
+      "mae": 0.2042670013939881,
+      "measurement_rmse": 0.0007538059101213824,
+      "inference_seconds": 0.43605254200519994,
+      "heldout_sensor_rmse": 0.30213493293701066,
+      "info": {
+        "step_size": 0.0010407263548835117
+      }
+    },
+    {
+      "seed": 1,
+      "model": "CNN",
+      "rmse": 0.12445903822261527,
+      "mae": 0.08325083906723044,
+      "measurement_rmse": 0.08332922778469942,
+      "inference_seconds": 0.009876334021100774,
+      "heldout_sensor_rmse": 0.13171850440751817,
+      "info": {}
+    },
+    {
+      "seed": 1,
+      "model": "DDPM",
+      "rmse": 0.13268939830403476,
+      "mae": 0.08961130710183143,
+      "measurement_rmse": 0.08094151657634892,
+      "inference_seconds": 0.32462204198236577,
+      "heldout_sensor_rmse": 0.1513946744054839,
+      "info": {
+        "uncertainty": "ensemble spread; not calibrated posterior",
+        "samples": 8
+      },
+      "pointwise_95_coverage": 0.8515625
+    },
+    {
+      "seed": 2,
+      "model": "IDW",
+      "rmse": 0.11261144897800457,
+      "mae": 0.08867931680402819,
+      "measurement_rmse": 0.062480162414341574,
+      "inference_seconds": 0.0007928340055514127,
+      "heldout_sensor_rmse": 0.11007639661423244,
+      "info": {}
+    },
+    {
+      "seed": 2,
+      "model": "Tikhonov",
+      "rmse": 0.09035639838029809,
+      "mae": 0.07288122162655457,
+      "measurement_rmse": 0.05125827868810954,
+      "inference_seconds": 0.006604958005482331,
+      "heldout_sensor_rmse": 0.09002831947406045,
+      "info": {}
+    },
+    {
+      "seed": 2,
+      "model": "GP",
+      "rmse": 0.17168019330224432,
+      "mae": 0.10698040809985801,
+      "measurement_rmse": 0.016242526362081258,
+      "inference_seconds": 0.09313774999463931,
+      "heldout_sensor_rmse": 0.11575527145268241,
+      "info": {
+        "uncertainty": "conditional latent-field standard deviation; fixed kernel"
+      },
+      "pointwise_95_coverage": 0.94140625
+    },
+    {
+      "seed": 2,
+      "model": "TV",
+      "rmse": 0.09410045917498645,
+      "mae": 0.07050917441599991,
+      "measurement_rmse": 0.02481759550302401,
+      "inference_seconds": 5.1732518339995295,
+      "heldout_sensor_rmse": 0.08830080520188893,
+      "info": {
+        "converged": true,
+        "iterations": 477,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    },
+    {
+      "seed": 2,
+      "model": "Heat",
+      "rmse": 0.1858807003341724,
+      "mae": 0.1436583339574426,
+      "measurement_rmse": 0.0005082881166810274,
+      "inference_seconds": 1.2663339999853633,
+      "heldout_sensor_rmse": 0.17383082914131506,
+      "info": {
+        "step_size": 0.0010407263548835117
+      }
+    },
+    {
+      "seed": 2,
+      "model": "CNN",
+      "rmse": 0.0848224671049973,
+      "mae": 0.06487407730918798,
+      "measurement_rmse": 0.07862292156797197,
+      "inference_seconds": 0.003960290981922299,
+      "heldout_sensor_rmse": 0.09321027917659058,
+      "info": {}
+    },
+    {
+      "seed": 2,
+      "model": "DDPM",
+      "rmse": 0.09635525216871225,
+      "mae": 0.07641809677306799,
+      "measurement_rmse": 0.07399964719440998,
+      "inference_seconds": 0.2631477920222096,
+      "heldout_sensor_rmse": 0.1038174973065074,
+      "info": {
+        "uncertainty": "ensemble spread; not calibrated posterior",
+        "samples": 8
+      },
+      "pointwise_95_coverage": 0.9140625
+    },
+    {
+      "seed": 3,
+      "model": "IDW",
+      "rmse": 0.17140683994539457,
+      "mae": 0.13945326338232206,
+      "measurement_rmse": 0.06332871321400184,
+      "inference_seconds": 0.0009796670055948198,
+      "heldout_sensor_rmse": 0.17696783315141626,
+      "info": {}
+    },
+    {
+      "seed": 3,
+      "model": "Tikhonov",
+      "rmse": 0.13127941616513472,
+      "mae": 0.10010254188365117,
+      "measurement_rmse": 0.04952881171238125,
+      "inference_seconds": 0.07699795797816478,
+      "heldout_sensor_rmse": 0.13835624602106408,
+      "info": {}
+    },
+    {
+      "seed": 3,
+      "model": "GP",
+      "rmse": 0.07207778272257444,
+      "mae": 0.045573119434850894,
+      "measurement_rmse": 0.013766181301689823,
+      "inference_seconds": 0.32076445798156783,
+      "heldout_sensor_rmse": 0.06249965350760378,
+      "info": {
+        "uncertainty": "conditional latent-field standard deviation; fixed kernel"
+      },
+      "pointwise_95_coverage": 1.0
+    },
+    {
+      "seed": 3,
+      "model": "TV",
+      "rmse": 0.13540897528175871,
+      "mae": 0.105265622019155,
+      "measurement_rmse": 0.02355194908130033,
+      "inference_seconds": 11.190978584025288,
+      "heldout_sensor_rmse": 0.12119860349209337,
+      "info": {
+        "converged": true,
+        "iterations": 519,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    },
+    {
+      "seed": 3,
+      "model": "Heat",
+      "rmse": 0.26591231304972596,
+      "mae": 0.18140446347239692,
+      "measurement_rmse": 0.0008269864052726183,
+      "inference_seconds": 2.417172790999757,
+      "heldout_sensor_rmse": 0.2198716395045481,
+      "info": {
+        "step_size": 0.0010407263548835117
+      }
+    },
+    {
+      "seed": 3,
+      "model": "CNN",
+      "rmse": 0.08720212065335532,
+      "mae": 0.07188983060918441,
+      "measurement_rmse": 0.0633508123677367,
+      "inference_seconds": 0.03619841701583937,
+      "heldout_sensor_rmse": 0.10754756321486354,
+      "info": {}
+    },
+    {
+      "seed": 3,
+      "model": "DDPM",
+      "rmse": 0.09095195415285959,
+      "mae": 0.0738344335901582,
+      "measurement_rmse": 0.06495797237454537,
+      "inference_seconds": 0.27161429199622944,
+      "heldout_sensor_rmse": 0.10339036583509625,
+      "info": {
+        "uncertainty": "ensemble spread; not calibrated posterior",
+        "samples": 8
+      },
+      "pointwise_95_coverage": 0.94921875
+    },
+    {
+      "seed": 4,
+      "model": "IDW",
+      "rmse": 0.11812291266960832,
+      "mae": 0.0837391104741757,
+      "measurement_rmse": 0.059760507729916985,
+      "inference_seconds": 0.001420042011886835,
+      "heldout_sensor_rmse": 0.1285821533219611,
+      "info": {}
+    },
+    {
+      "seed": 4,
+      "model": "Tikhonov",
+      "rmse": 0.09876430534244829,
+      "mae": 0.06970055114455509,
+      "measurement_rmse": 0.052278307759532794,
+      "inference_seconds": 0.5312239579798188,
+      "heldout_sensor_rmse": 0.1067302827291149,
+      "info": {}
+    },
+    {
+      "seed": 4,
+      "model": "GP",
+      "rmse": 0.14517425640294368,
+      "mae": 0.09295736607930682,
+      "measurement_rmse": 0.012657891542679798,
+      "inference_seconds": 0.10508249999838881,
+      "heldout_sensor_rmse": 0.1913192012247755,
+      "info": {
+        "uncertainty": "conditional latent-field standard deviation; fixed kernel"
+      },
+      "pointwise_95_coverage": 0.86328125
+    },
+    {
+      "seed": 4,
+      "model": "TV",
+      "rmse": 0.08336209757658576,
+      "mae": 0.0456944557729675,
+      "measurement_rmse": 0.023427468916509764,
+      "inference_seconds": 9.48202900000615,
+      "heldout_sensor_rmse": 0.1010071058322747,
+      "info": {
+        "converged": true,
+        "iterations": 440,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    },
+    {
+      "seed": 4,
+      "model": "Heat",
+      "rmse": 0.18256496037266146,
+      "mae": 0.13112828665851126,
+      "measurement_rmse": 0.0005309796523500474,
+      "inference_seconds": 1.2278099159884732,
+      "heldout_sensor_rmse": 0.1661172694781572,
+      "info": {
+        "step_size": 0.0010407263548835117
+      }
+    },
+    {
+      "seed": 4,
+      "model": "CNN",
+      "rmse": 0.08169332162097999,
+      "mae": 0.0650947766872184,
+      "measurement_rmse": 0.06420701192068472,
+      "inference_seconds": 0.009236750018317252,
+      "heldout_sensor_rmse": 0.07666815383633198,
+      "info": {}
+    },
+    {
+      "seed": 4,
+      "model": "DDPM",
+      "rmse": 0.0982665433535342,
+      "mae": 0.07692548785951994,
+      "measurement_rmse": 0.0709389585499478,
+      "inference_seconds": 0.41449454199755564,
+      "heldout_sensor_rmse": 0.09865162484826824,
+      "info": {
+        "uncertainty": "ensemble spread; not calibrated posterior",
+        "samples": 8
+      },
+      "pointwise_95_coverage": 0.90234375
+    }
+  ],
+  "summary": {
+    "IDW": {
+      "rmse": {
+        "mean": 0.1376098813357421,
+        "std": 0.021897111273565494
+      },
+      "mae": {
+        "mean": 0.10449621019517438,
+        "std": 0.020495710635285536
+      },
+      "heldout_sensor_rmse": {
+        "mean": 0.14275473399126293,
+        "std": 0.024133868724061612
+      },
+      "inference_seconds": {
+        "mean": 0.0009358252049423754,
+        "std": 0.00025729354590139605
+      }
+    },
+    "Tikhonov": {
+      "rmse": {
+        "mean": 0.11827760940422957,
+        "std": 0.01968032623479713
+      },
+      "mae": {
+        "mean": 0.08497411103984029,
+        "std": 0.01169328054950879
+      },
+      "heldout_sensor_rmse": {
+        "mean": 0.12681813240387968,
+        "std": 0.026124537542759577
+      },
+      "inference_seconds": {
+        "mean": 0.12998623298481107,
+        "std": 0.2021428462262211
+      }
+    },
+    "GP": {
+      "rmse": {
+        "mean": 0.12507418923153701,
+        "std": 0.04514826344519191
+      },
+      "mae": {
+        "mean": 0.08145390788390375,
+        "std": 0.028415206056584617
+      },
+      "heldout_sensor_rmse": {
+        "mean": 0.11953274570595576,
+        "std": 0.048595591010117414
+      },
+      "inference_seconds": {
+        "mean": 0.142967033397872,
+        "std": 0.09487887540487334
+      }
+    },
+    "TV": {
+      "rmse": {
+        "mean": 0.11842311133439469,
+        "std": 0.026784954161951736
+      },
+      "mae": {
+        "mean": 0.08113602943273647,
+        "std": 0.021954752829012165
+      },
+      "heldout_sensor_rmse": {
+        "mean": 0.12078453469733152,
+        "std": 0.029465276172102997
+      },
+      "inference_seconds": {
+        "mean": 5.865293417003704,
+        "std": 3.898629115548784
+      }
+    },
+    "Heat": {
+      "rmse": {
+        "mean": 0.2425068969282851,
+        "std": 0.04834671017952313
+      },
+      "mae": {
+        "mean": 0.16987106694001916,
+        "std": 0.027807213269069403
+      },
+      "heldout_sensor_rmse": {
+        "mean": 0.23740779292205771,
+        "std": 0.06528193800725021
+      },
+      "inference_seconds": {
+        "mean": 1.1596689247933682,
+        "std": 0.7243208989730837
+      }
+    },
+    "CNN": {
+      "rmse": {
+        "mean": 0.09598334699047614,
+        "std": 0.015810639440759746
+      },
+      "mae": {
+        "mean": 0.07038109622286871,
+        "std": 0.006914220302515687
+      },
+      "heldout_sensor_rmse": {
+        "mean": 0.10370650535659176,
+        "std": 0.018291794399423193
+      },
+      "inference_seconds": {
+        "mean": 0.012143341806950047,
+        "std": 0.012439074383884875
+      }
+    },
+    "DDPM": {
+      "rmse": {
+        "mean": 0.1050506310870006,
+        "std": 0.014751737431087658
+      },
+      "mae": {
+        "mean": 0.07797645487814212,
+        "std": 0.005998462591214659
+      },
+      "heldout_sensor_rmse": {
+        "mean": 0.11642211514650647,
+        "std": 0.01969116803818134
+      },
+      "inference_seconds": {
+        "mean": 0.29566765019553715,
+        "std": 0.0705878229734681
+      }
+    }
+  }
+}
