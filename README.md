@@ -22,6 +22,10 @@ python -m ipykernel install --prefix .venv --name fieldlab --display-name "Field
 jupyter lab tutorials
 ```
 
+For Linux CPU-only environments, install PyTorch first with
+`python -m pip install torch --index-url https://download.pytorch.org/whl/cpu`
+to avoid downloading GPU libraries. See [PyTorch installation guidance](https://pytorch.org/get-started/previous-versions/).
+
 On CPU, small teaching experiments should complete in minutes; actual runtime
 varies with the machine. No pretrained weights or GPU are required.
 
