@@ -1,12 +1,19 @@
 # Field Reconstruction Lab
 
+### From Pixels to Physical Fields
+
 **From pixels to physical fields: signal processing, sensor geometry, classical
 inverse problems, Bayesian inference, neural networks, and generative diffusion.**
 
-This repository expands the original microwave-link spatial-interpolation
-project into a runnable teaching and research lab. Start with images as sampled
-fields, learn what points/lines/footprints observe, and reconstruct 1D and 2D
-fields. Finish with tomography and projections of 3D density fields.
+A teaching and research project for learning how images and physical fields
+are measured and reconstructed. The course connects pixel sampling and
+classical signal processing to spatial interpolation, Bayesian inference,
+neural networks, and generative diffusion.
+
+Work with point sensors, line measurements, and area footprints on real and
+simulated 1D and 2D fields, then explore tomography and 3D projections.
+The original microwave-link interpolation work remains as an attributed
+case study in `Iterative/`.
 
 ## Start in five minutes
 
@@ -99,7 +106,7 @@ calibrated dataset.
 - `fieldlab/`: measurement operators, field generators, estimators, training,
   data adapters, and benchmark CLI.
 - `tutorials/`: executable lesson notebooks with exercises.
-- `examples/`: real 1D temperature and simulated 2D/3D tomography.
+- `examples/`: real 1D/2D temperature fields and simulated 2D/3D tomography.
 - `tests/`: operator correctness, inversion, uncertainty, and learning checks.
 - `Iterative/`: preserved original GMZ code and student notebook.
 
