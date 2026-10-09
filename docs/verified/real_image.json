@@ -1,0 +1,57 @@
+{
+  "seed": 42,
+  "grid": [
+    20,
+    20
+  ],
+  "noise_std": 0.03,
+  "source": "Real photograph with simulated sensor observations",
+  "ml_training": "Synthetic fields; fixed sensor geometry; test seed separate. Real image is out of distribution.",
+  "fairness": "IDW sees points only; other estimators see all sensors. Scores are a demo, not a tuned ranking.",
+  "scores": {
+    "IDW (points only)": {
+      "rmse": 0.1474004330066458,
+      "mae": 0.11522776748400512,
+      "measurement_rmse": 0.0836905225603243,
+      "seconds": 0.0010266249882988632,
+      "info": {}
+    },
+    "Tikhonov": {
+      "rmse": 0.10837507358092273,
+      "mae": 0.07936306588365533,
+      "measurement_rmse": 0.05759775911607196,
+      "seconds": 0.2869827499962412,
+      "info": {}
+    },
+    "Gaussian process": {
+      "rmse": 0.1276238780660337,
+      "mae": 0.08446185099723542,
+      "measurement_rmse": 0.025106873007683606,
+      "seconds": 0.05073299998184666,
+      "info": {
+        "uncertainty": "conditional latent-field standard deviation; fixed kernel"
+      }
+    },
+    "Total variation": {
+      "rmse": 0.10372707207423369,
+      "mae": 0.06423765090470096,
+      "measurement_rmse": 0.029169530284723445,
+      "seconds": 9.960809958021855,
+      "info": {
+        "converged": true,
+        "iterations": 614,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    },
+    "Heat regularization": {
+      "rmse": 0.31191780121376883,
+      "mae": 0.21759325011245154,
+      "measurement_rmse": 0.0030285569106400785,
+      "seconds": 1.691696875001071,
+      "info": {
+        "step_size": 0.0006660266983364368
+      }
+    }
+  },
+  "training": {}
+}

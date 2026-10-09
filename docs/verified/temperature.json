@@ -1,0 +1,14 @@
+{
+  "heldout_rmse": {
+    "Tikhonov": 0.09665775255388416,
+    "GP": 0.10700531064130457
+  },
+  "provenance": {
+    "source": "https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv",
+    "units": "deg C anomaly relative to 1951\u20131980",
+    "sha256": "4c64eda288bce32b8d76926278f346ecea1e53506df8ee72a3d5accb0657c416",
+    "count": 146,
+    "note": "Real annual series; missing-year mask in tutorial is simulated."
+  },
+  "noise_note": "Assumed .08\u00b0C; not official NASA error bars"
+}

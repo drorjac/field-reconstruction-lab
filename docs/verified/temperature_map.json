@@ -1,0 +1,29 @@
+{
+  "provenance": {
+    "source": "https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz",
+    "sha256": "44c8a2d358d73a5488232cedda387c6e6501671f9d2286b5c656f5a4efb43796",
+    "accessed": "2026-10-09",
+    "period": "2019\u20132023 mean",
+    "region": "20\u201354 N, 130\u201384 W",
+    "units": "deg C anomaly relative to 1951\u20131980",
+    "note": "NASA spatial analysis with 1200km smoothing; synthetic sparse sensors. Flat regional index-grid approximation, not spherical geostatistics."
+  },
+  "scores": {
+    "Tikhonov": {
+      "rmse": 0.09312789377158218,
+      "mae": 0.06739747475263232,
+      "measurement_rmse": 0.06347780530836516
+    },
+    "GP": {
+      "rmse": 0.13175154760576194,
+      "mae": 0.09082613158480181,
+      "measurement_rmse": 0.054096737371397884
+    },
+    "TV": {
+      "rmse": 0.1322959046900545,
+      "mae": 0.10452969745622737,
+      "measurement_rmse": 0.11621716208588358
+    }
+  },
+  "warning": "Reconstruction of a real analyzed field with simulated sensors; not validation on actual independent stations/CMLs."
+}
